@@ -12,5 +12,5 @@ with pymupdf.open(pdf) as doc:
         for term in terms:
             start = 0
             while (i := low.find(term, start)) != -1:
-                print(f"[page {n}] term: ... {text[max(0, i - 200): i + 300]}...\n")
+                print(f"[page {n}] term: ... {text[max(0, i - 200) : i + 300]}...\n")
                 start = i + len(term)
